@@ -4,6 +4,8 @@ on:
 jobs:
   build_linux:
     runs-on: ubuntu-latest
+    container:
+            image: registry.gitlab.steamos.cloud/steamrt/sniper/sdk
     steps:
     - name: Setup xmake
       uses: xmake-io/github-action-setup-xmake@v1
