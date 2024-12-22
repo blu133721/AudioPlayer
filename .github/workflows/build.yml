@@ -16,7 +16,7 @@ jobs:
       with:
         submodules: recursive
     - name: Build plugin
-      run: xmake build -y linux
+      run: XMAKE_ROOT=y xmake build -y linux
     - name: Pack plugin
       run: xmake pack audioplayer_linux
     - name: Upload plugin as artifact
